@@ -1,0 +1,40 @@
+.p {
+    color: azure;
+    display: grid;
+    grid-template-columns: repeat(4, 110px);
+    gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+body {
+    background-color: darkgrey;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: rgb(73, 85, 133);
+    color: rgb(76, 81, 85);
+}
+
+button:active {
+    background-color: rgb(26, 48, 60);
+    animation-name: rotate;
+    animation-duration: 0.3s;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
